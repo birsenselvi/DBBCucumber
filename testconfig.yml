@@ -1,0 +1,62 @@
+---
+application:
+  name: "Automation Exercise"
+  url: "https://automationexercise.com/"
+
+users:
+  - type: "admin"
+    name: "Ahmet"
+    username: "atezgider@gmail.com"
+    password: "atezgider"
+  - type: "tester"
+    name: "Ahmet"
+    username: "atezgider@gmail.com"
+    password: "atezgider"
+  - type: "user"
+    name: "Ahmet"
+    username: "atezgider@gmail.com"
+    password: "atezgider"
+
+
+tests:
+  browser: CHROME # FIREFOX, EDGE, SAFARI
+  features: "src/main/resources/features/01Login.feature"
+  tags: ""
+
+
+chrome:
+  version: 116
+  extensions:
+    - "crx/add_blocker_extension_4_44_0_0.crx"
+    - ""
+  options:
+    - "--start-maximized"
+    - "--disable-popup-blocking"
+    #- "--headless"
+    #- "--incognito"
+    #- "user-data-dir=C:/Users/pc/AppData/Local/Google/Chrome/User Data"
+
+edge:
+  version: 110
+  extensions:
+    - "crx/add_blocker_extension_4_44_0_0.crx"
+    - ""
+  options:
+    - ""
+    - ""
+
+firefox:
+  version: 62
+  extensions:
+    - ""
+  options:
+    - ""
+    - ""
+
+variables:
+  var1: "variable1"
+  var2: "variable2"
+  var3: "variable3"
+  var4: "variable4"
+  aaa: "bbbbbb"
+  ali.veli.deli: "121312312312"
